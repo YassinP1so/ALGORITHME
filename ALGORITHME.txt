@@ -1,0 +1,43 @@
+ALGORITHM The len of the sentence
+VAR
+    str = STRING ="Longest Word Length"
+    count = INTEGER = 0
+BEGIN
+    FOR (i = 0, i < str, i++)DO;
+    IF (str[i]!= " ");
+    count++;
+    ELSE
+    count = 0;
+    END_FOR
+    END_IF
+    Write(count);
+END
+
+ALGORITHM The number of words in the sentence
+VAR
+    str = "Longest Word Length";  
+    count = INTEGER = 0
+BEGIN
+    FOR i in Length(str) DO; 
+    IF(str[i] =="" and);
+    count = count + 1
+    END_FOR
+    END_IF
+    Write(count);
+END
+
+ALGORITHM The number of words in the sentence
+VAR
+    s = "Longest Word Length"
+    vowels = ["a","e","i","o","u"]
+    count = 0
+BEGIN
+    FOR i in s DO;
+    IF i in vowels;
+    count += 1
+    num_vowels = count
+    END_FOR
+    END_IF
+    Write(count)
+    
+END
